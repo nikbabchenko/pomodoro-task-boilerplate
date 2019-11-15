@@ -1,0 +1,30 @@
+<div class="pomodoro-timer">
+  <app-header></app-header>
+
+  <div class="pomodoro-timer__content">
+    <div class="pomodoro-timer__item">
+      <!-- TODO: time should be there -->
+    </div>
+    <div class="pomodoro-timer__buttons buttons">
+      <button
+        [disabled]="!time"
+        class="button is-primary is-rounded"
+      >
+        <i class="fas fa-play"></i>
+      </button>
+
+      <button class="button is-danger is-rounded" (click)="toggle()">
+        <i class="fas fa-stop"></i>
+      </button>
+
+      <button
+        class="button is-warning  is-rounded is-fullwidth"
+      >
+        Reset
+      </button>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+<audio #ding src="./assets/ding.mp3"></audio>

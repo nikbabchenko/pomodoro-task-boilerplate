@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bulma/css/bulma.min.css';
+
+html {
+    --app-background-color: linear-gradient(to bottom, rgba(20,35,71,1) 0%, rgba(32,51,102,1) 43%, rgba(27,46,90,1) 73%, rgba(25,44,84,1) 85%, rgba(27,46,90,1) 100%);
+    --app-text-color: #fff;
+
+    &.light {
+        --app-background-color: #fff;
+        --app-text-color: #0f1014;
+    }
+
+    font-size: 9px;
+
+    @media screen and (min-width: 800px) {
+        font-size: 10px;
+    }
+
+}
+
+
+body {
+    font-size: 1.6rem;
+    color: var(--app-text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+.select select {
+    font-size: 16px;
+}

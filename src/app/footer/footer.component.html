@@ -1,0 +1,18 @@
+<div class="columns is-vcentered is-centered">
+  <div class="column">
+    <label class="is-size-5" for="timer-select">Select time</label>
+  </div>
+  <div class="column">
+      <div class="select">
+          <select
+            id="timer-select"
+            [(ngModel)]="time"
+            (ngModelChange)="onModelChange($event)"
+          >
+
+          </select>
+        </div>
+  </div>
+</div>
+
+<p>Pomodoro rights {{ year }} - &#9400;</p>

@@ -1,0 +1,46 @@
+.pomodoro-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  background: var(--app-background-color);
+  padding: 1rem;
+  min-height: 100vh;
+
+  &__content {
+    color: var(--app-text-color);
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    font-size: 8rem;
+    font-weight: 300;
+    min-width: 26rem;
+    text-align: center;
+  }
+
+  &__buttons {
+      padding-top: 4rem;
+
+      .button {
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+
+          border-radius: 50%;
+          width: 6rem;
+          height: 6rem;
+      }
+  }
+
+  button {
+      font-size: 1.6rem;
+  }
+}
